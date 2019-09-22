@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+	<title>up</title>
+	<style type="text/css">
+		#mybody{margin: auto;text-align: center; width: 1000px; height: 800px; }
+		#h{font-family: 'Jua', sans-serif; font-size: 50px;}
+		#c{position: absolute; left: 950px; top:500px; width: 200px;}
+	</style>
+</head>
+<body id="mybody">
+	<h1 id="h">풍선을 클릭해보세요!</h1>
+	<img src="balloon.jpg" id="myimg">
+	<img src="click.gif" id="c">
+	
+
+<audio id="mysound" >
+<source src="life.mp3" type="audio/ogg">
+</audio>
+	
+
+<script type="text/javascript">
+  	
+	myimg.onclick = function(){
+		c.style.opacity="0";
+		myimg.src = "up.gif";
+		mybody.style.background = 
+					"url('up.gif')";
+		mybody.style.backgroundSize = "300px auto"; 
+		h.style.display = "none";
+		myimg.style.display = "none";
+		mysound.play();
+	}
+</script>
+</body>
+</html>
